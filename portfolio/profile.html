@@ -1,0 +1,315 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>profile</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.navbar {
+  background-color: #343a40;
+  padding: 16px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #bdc3c7 !important;
+}
+
+.start {
+  background-image: url('img/rrr.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+
+.start img {
+  max-width: 150px;
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.start h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.start p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.about {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #420762;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.service-card {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body h4 {
+  font-size: 1.3rem;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.contact {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+.contact h2 {
+  color: #420762;
+}
+
+.contact p {
+  font-size: 1rem;
+}
+
+.card-body img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+img {
+  border: none;
+  border-radius: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .start h2 {
+    font-size: 2rem;
+  }
+  .start p {
+    font-size: 0.9rem;
+  }
+  .card-body h4 {
+    font-size: 1.1rem;
+  }
+  .card-body p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+  .start img {
+    width: 50%;
+  }
+  .start h2 {
+    font-size: 1.7rem;
+  }
+  .start p {
+    font-size: 0.85rem;
+  }
+  .card-body h4 {
+    font-size: 1rem;
+  }
+  .card-body p {
+    font-size: 0.8rem;
+  }
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-uppercase text-white" href="#">Vijo Varghese</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#skill">Skills</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#project">Project</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="start">
+  <div>
+    <img src="img/vvv.jpg" alt="pic">
+    <h2>Hi, I'm Vijo Varghese</h2>
+    <p>Python Developer | Django | Frontend Enthusiast</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div>
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer from Kerala who loves creating efficient, elegant, and user-friendly web applications using Python, Django,HTML,CSS and Bootstrap. I enjoy solving real-world problems through clean and maintainable code.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="container my-5" id="skill"> 
+  <h2 class="text-center text-dark mb-4 fw-bold text-uppercase">My Skills</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card border-0 shadow service-card h-100">
+        <div class="card-body text-center bg-light">
+          <img src="img/python.png" alt="Python Icon" style="width: 60px;" class="mb-3">
+          <h4 class="text-primary fw-bold mb-3">Python & Django</h4>
+          <p class="text-muted">Building secure, scalable back-end systems and APIs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card border-0 shadow service-card h-100">
+        <div class="card-body text-center bg-light">
+          <img src="img/html.png" alt="html Icon" style="width: 60px;" class="mb-3">
+          <h4 class="text-success fw-bold mb-3">HTML, CSS,Bootstrap 5, JS</h4>
+          <p class="text-muted">Creating responsive, interactive front-end layouts.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card border-0 shadow service-card h-100">
+        <div class="card-body text-center bg-light">
+          <img src="img/mysql.jpg" alt="bootstrap Icon" style="width: 60px;" class="mb-3">
+          <h4 class="text-warning fw-bold mb-3">MySql</h4>
+          <p class="text-muted">Reliable engine, high performance, SQL-powered</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section style="background-color: #ffffff; padding: 60px 20px;">
+  <div>
+    
+  </div>
+</section>
+
+
+
+
+
+<section class="container my-5" id="project">
+  <h2 class="text-center text-dark mb-4 fw-bold text-uppercase">My Projects</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card border-0 shadow service-card h-100">
+        <div class="card-body text-center bg-light">
+          <img src="img/hero-1.jpg" alt="bootstrap Icon" style="width: 100%;" class="mb-3">
+          <h4 class="text-primary fw-bold mb-3">MaleFashion</h4>
+          <p class="text-muted">Developed a complete online shopping platform for men's clothing, shoes, and watches. Includes category filtering, user authentication, cart management, and responsive UI. Integrated secure checkout flow, order tracking, and dynamic stock updates. Built with HTML, CSS, Bootstrap, Python, Django, and MySQL for a smooth and scalable shopping experience.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card border-0 shadow service-card h-100">
+        <div class="card-body text-center bg-light">
+          <img src="img/web.png" alt="bootstrap Icon" style="width: 100%;" class="mb-3">
+          <h4 class="text-success fw-bold mb-3">Web Pages</h4>
+          <p class="text-muted">Developed dynamic and well-structured webpages using HTML, CSS, Bootstrap, and JavaScript, focusing on clean layouts and smooth user interactions. Ensured a polished visual experience with consistent styling, intuitive navigation, and responsive components.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card border-0 shadow service-card h-100">
+        <div class="card-body text-center bg-light">
+          <img src="img/vote.jpg" alt="bootstrap Icon" style="width: 100%;" class="mb-3">
+          <h4 class="text-warning fw-bold mb-3">Voting System</h4>
+          <p class="text-muted">Built a blockchain-based voting system for secure and transparent university elections. Designed to ensure tamper-proof vote recording, real-time verification, and a smooth digital voting experience. Developed using HTML, CSS, JavaScript, XML, Python (Flask), Java, and MySQL, with a focus on security, integrity, and efficient user interaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div>
+    <h2>Contact Me</h2>
+    <p>Let's collaborate on our next mission</p>
+    <p class="fs-5">📞 Phone: <span class="text-success">+91 9562504199</span></p>
+    <p class="fs-5">📧 Email: <span class="text-dark">vijovarghese04@gmail.com</span></p>
+  </div>
+</section>
+
+<footer class="text-white text-center py-3 bg-dark navbar-dark shadow">
+  <p class="mb-0">© 2025 Vijo Varghese | Crafted with passion and clean code.</p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
